@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dfbdf131410e71847a15b8f9dc130140
+guid: 776ea075f0055d9439d575ebaf136a0c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 412
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -94,6 +94,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,547 +123,715 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: skin-1-idle
+      name: Cube_Skins_0
       rect:
         serializedVersion: 2
-        x: 110
-        y: 1632
-        width: 282
-        height: 288
+        x: 30
+        y: 4293
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caf2e0d0b682fe040803b5f774eb6722
-      internalID: -588846040
+      spriteID: 8274464b4e1c0dd4d80c4d4b8637b435
+      internalID: -964582571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-1-fly
+      name: Cube_Skins_1
       rect:
         serializedVersion: 2
-        x: 462
-        y: 1632
-        width: 282
-        height: 288
+        x: 564
+        y: 4293
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f2df49620d8e6540abda98597758d8e
-      internalID: -857177253
+      spriteID: a88aea67abaaa8d43a17da723aa6e1e8
+      internalID: -2026315876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-2-idle
+      name: 1a
       rect:
         serializedVersion: 2
-        x: 843
-        y: 1632
-        width: 282
-        height: 288
+        x: 1192
+        y: 4261
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 501974c3379fda749ad900aef0ff0018
-      internalID: -1124289592
+      spriteID: e6219cdbbfe7cc44dbb75494cadb2c52
+      internalID: -698287480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-2-fly
+      name: 1b
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1632
-        width: 282
-        height: 288
+        x: 1726
+        y: 4266
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5c55101418edb346872506a9d915d8d
-      internalID: 1092329887
+      spriteID: e7304d8f2ff0fc64ab583b561916ae91
+      internalID: 1805084343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-3-idle
+      name: 2a
       rect:
         serializedVersion: 2
-        x: 1558
-        y: 1632
-        width: 282
-        height: 288
+        x: 2285
+        y: 4267
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a75762cfa8ac270449b0d4064d79f0c9
-      internalID: -515556984
+      spriteID: 71747c41d11721948a39b98e1130df5e
+      internalID: 1352572303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-3-fly
+      name: 2b
       rect:
         serializedVersion: 2
-        x: 1894
-        y: 1632
-        width: 282
-        height: 288
+        x: 2797
+        y: 4265
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 227bce703f6511d4a827578c4197936d
-      internalID: 730985767
+      spriteID: a5cea68ff08ff6845b82fdbf32a03b6b
+      internalID: -2130134913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-4-idle
+      name: 4a
       rect:
         serializedVersion: 2
-        x: 103
-        y: 1290
-        width: 282
-        height: 288
+        x: 3420
+        y: 4266
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9c401ed2c621a4597e045cc289f80a
-      internalID: 1095366297
+      spriteID: abc1a3c2af90072469ac38dd48db40eb
+      internalID: -772016670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-4-fly
+      name: 4b
       rect:
         serializedVersion: 2
-        x: 457
-        y: 1290
-        width: 282
-        height: 288
+        x: 3931
+        y: 4265
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a53c8549dbde80f41807a6b880a3e194
-      internalID: -408847118
+      spriteID: c77f8de47dfdf004ca4d0a9173f4af9f
+      internalID: -1096525856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-5-idle
+      name: 8a
       rect:
         serializedVersion: 2
-        x: 845
-        y: 1290
-        width: 282
-        height: 288
+        x: 4494
+        y: 4253
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17510e2754b3f7341a6528f5e93b8422
-      internalID: 1435349627
+      spriteID: 8831e5aa5952c0944b316eee86fbe770
+      internalID: -879017887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-5-fly
+      name: 8b
       rect:
         serializedVersion: 2
-        x: 1187
-        y: 1290
-        width: 282
-        height: 288
+        x: 5022
+        y: 4263
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a58e59cb20121824b92949381d1fe6ae
-      internalID: 159074334
+      spriteID: 6efa0347fb618684e892e2180598bc60
+      internalID: 321012839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-6-idle
+      name: 7a
       rect:
         serializedVersion: 2
-        x: 1556
-        y: 1293
-        width: 282
-        height: 288
+        x: 27
+        y: 3733
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8830bcbd53557c469a92c9dcf614f84
-      internalID: 58202083
+      spriteID: 002bd68124dce914c9c160ba7332c6f3
+      internalID: 1554779961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-6-fly
+      name: 7b
       rect:
         serializedVersion: 2
-        x: 1899
-        y: 1293
-        width: 282
-        height: 288
+        x: 566
+        y: 3736
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7965ec91fa405564eba635121a60a018
-      internalID: -1674645725
+      spriteID: ceccce0cdd15708479d2bb3fe2a8106e
+      internalID: 1305977948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-7-idle
+      name: 6a
       rect:
         serializedVersion: 2
-        x: 103
-        y: 928
-        width: 282
-        height: 288
+        x: 1195
+        y: 3706
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b20395dddb71a13479abf149f47a8fe5
-      internalID: 1334372502
+      spriteID: 5f9bb4ac513841040b8d60e6764bb13d
+      internalID: -807103565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-7-fly
+      name: 6b
       rect:
         serializedVersion: 2
-        x: 452
-        y: 928
-        width: 282
-        height: 288
+        x: 1727
+        y: 3710
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d123597f7dea3b44abffa17e3b5bb08
-      internalID: 442626808
+      spriteID: 18cc7baaf3b9d4d4fa43410278543bfa
+      internalID: 1375934694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-8-idle
+      name: 3a
       rect:
         serializedVersion: 2
-        x: 843
-        y: 926
-        width: 282
-        height: 288
+        x: 2288
+        y: 3733
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e04de1c6b17f0464dbc627a28fdb7c7d
-      internalID: 1114934684
+      spriteID: f9217aaabb14fdf4983a77b9c79530f1
+      internalID: 13445489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-8-fly
+      name: 3b
       rect:
         serializedVersion: 2
-        x: 1189
-        y: 923
-        width: 282
-        height: 288
+        x: 2796
+        y: 3730
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c73499c7f242fd54ca1541afa880ba02
-      internalID: -2092624091
+      spriteID: 6ad61b54e41c63b41911275ce91c3b4b
+      internalID: 760179043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-9-idle
+      name: 5b
       rect:
         serializedVersion: 2
-        x: 1554
-        y: 922
-        width: 282
-        height: 288
+        x: 2798
+        y: 3124
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2509ab2f4748fb4da6d50e8f6b271b8
-      internalID: 467451687
+      spriteID: fbeb779739fd451448d01ca3ea430e49
+      internalID: -518962438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-9-fly
+      name: 5a
       rect:
         serializedVersion: 2
-        x: 1895
-        y: 922
-        width: 282
-        height: 288
+        x: 2293
+        y: 3116
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e9620b95c781b847840b6373d768e55
-      internalID: -594505200
+      spriteID: c8df9f10dc45a4c42b8a2af496fb2c58
+      internalID: 720543242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-10-idle
+      name: 10b
       rect:
         serializedVersion: 2
-        x: 109
-        y: 560
-        width: 265
-        height: 284
+        x: 1725
+        y: 3126
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea61d554d703bb843889f0c84a8904f6
-      internalID: 256909848
+      spriteID: 97fae87717a03104393b8e619a44aa1e
+      internalID: 1090174274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-10-fly
+      name: 10a
       rect:
         serializedVersion: 2
-        x: 464
-        y: 560
-        width: 262
-        height: 284
+        x: 1195
+        y: 3125
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f707a938b2acd2408e8f77823e3d445
-      internalID: -350227196
+      spriteID: 1cad2530e313ac043a8154deda9dd95c
+      internalID: -1434975799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-11-idle
+      name: 9b
       rect:
         serializedVersion: 2
-        x: 846
-        y: 560
-        width: 282
-        height: 288
+        x: 563
+        y: 3132
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b954f079877329e45b5938de854e436b
-      internalID: 2043934254
+      spriteID: a08a793a66d165d4b85afa03dcacaa99
+      internalID: -1027541794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-11-fly
+      name: 9a
       rect:
         serializedVersion: 2
-        x: 1189
-        y: 560
-        width: 282
-        height: 288
+        x: 29
+        y: 3132
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffd5cc5d5be716d4a81819b578f93abb
-      internalID: -329826509
+      spriteID: f093b9193fc9b954fac76fbf54479a26
+      internalID: -369075434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-12-idle
+      name: 11a
       rect:
         serializedVersion: 2
-        x: 1552
-        y: 560
-        width: 282
-        height: 288
+        x: 44
+        y: 2537
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 676af8fa1686b5b40a150b3d053d73eb
-      internalID: 789620039
+      spriteID: 7a028fa978882f846a35021eab490eb5
+      internalID: 1519940440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-12-fly
+      name: 11b
       rect:
         serializedVersion: 2
-        x: 1894
-        y: 560
-        width: 282
-        height: 288
+        x: 567
+        y: 2536
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be67ffe3da8a04049906755997c9fd04
-      internalID: -943781474
+      spriteID: b87764816007e1f47901440d04a90996
+      internalID: 1075883578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-13-idle
+      name: 12a
       rect:
         serializedVersion: 2
-        x: 103
-        y: 189
-        width: 282
-        height: 288
+        x: 1203
+        y: 2533
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f90aa18f77a9acb4c86ad876ac7386df
-      internalID: 333313010
+      spriteID: 713111d8229b25841a7c77cd1c7aa11c
+      internalID: 216322821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skin-13-fly
+      name: 12b
       rect:
         serializedVersion: 2
-        x: 454
-        y: 189
-        width: 282
-        height: 288
+        x: 1739
+        y: 2534
+        width: 423
+        height: 435
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fa6557754303f544bd28fc24d31f0dc
-      internalID: 1945739487
+      spriteID: 25d0e86c3cbf7714db844087492bd90a
+      internalID: 237509980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13a
+      rect:
+        serializedVersion: 2
+        x: 2293
+        y: 2536
+        width: 423
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42648dc2e465c24bae02bb2ff5eafc5
+      internalID: -2007720207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13b
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 2536
+        width: 423
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca2ab9ea5aa6bf4a8495f45bd9f9cae
+      internalID: 940928802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14a
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1983
+        width: 423
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8051b88ccb6622a49b8b80dfeea66ba6
+      internalID: -2039800265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14b
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1982
+        width: 423
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a97215974cd7d6469320e59369c4296
+      internalID: 689071997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 15a
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1989
+        width: 355
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1c8b4a81dd5474c9a28107b80ecad1
+      internalID: 545495931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 15b
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 1989
+        width: 355
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c083218e75192742b56ce8bb8c87558
+      internalID: -593406597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16a
+      rect:
+        serializedVersion: 2
+        x: 2325
+        y: 1987
+        width: 355
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b40349f9e524241bfcf1f2f3a27a57
+      internalID: -786514175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16b
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 1989
+        width: 355
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4549d44b3344648a4b79250dd94490
+      internalID: -1946152215
       vertices: []
       indices: 
       edges: []
@@ -666,32 +847,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      skin-1-fly: -857177253
-      skin-1-idle: -588846040
-      skin-10-fly: -350227196
-      skin-10-idle: 256909848
-      skin-11-fly: -329826509
-      skin-11-idle: 2043934254
-      skin-12-fly: -943781474
-      skin-12-idle: 789620039
-      skin-13-fly: 1945739487
-      skin-13-idle: 333313010
-      skin-2-fly: 1092329887
-      skin-2-idle: -1124289592
-      skin-3-fly: 730985767
-      skin-3-idle: -515556984
-      skin-4-fly: -408847118
-      skin-4-idle: 1095366297
-      skin-5-fly: 159074334
-      skin-5-idle: 1435349627
-      skin-6-fly: -1674645725
-      skin-6-idle: 58202083
-      skin-7-fly: 442626808
-      skin-7-idle: 1334372502
-      skin-8-fly: -2092624091
-      skin-8-idle: 1114934684
-      skin-9-fly: -594505200
-      skin-9-idle: 467451687
+      10a: -1434975799
+      10b: 1090174274
+      11a: 1519940440
+      11b: 1075883578
+      12a: 216322821
+      12b: 237509980
+      13a: -2007720207
+      13b: 940928802
+      14a: -2039800265
+      14b: 689071997
+      15a: 545495931
+      15b: -593406597
+      16a: -786514175
+      16b: -1946152215
+      1a: -698287480
+      1b: 1805084343
+      2a: 1352572303
+      2b: -2130134913
+      3a: 13445489
+      3b: 760179043
+      4a: -772016670
+      4b: -1096525856
+      5a: 720543242
+      5b: -518962438
+      6a: -807103565
+      6b: 1375934694
+      7a: 1554779961
+      7b: 1305977948
+      8a: -879017887
+      8b: 321012839
+      9a: -369075434
+      9b: -1027541794
+      Cube_Skins_0: -964582571
+      Cube_Skins_1: -2026315876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

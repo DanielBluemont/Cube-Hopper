@@ -43,13 +43,14 @@ namespace CubeHopper
                 Debug.Log("Rewarded ad loaded with response : " + ad.GetResponseInfo());
 
                 rewardedAd = ad;
-                RegisterEventHandlers(rewardedAd);
+               
             });
         }
 
         
         public void ShowRewardedAd()
         {
+            LoadRewardedAd();
             if (rewardedAd != null && rewardedAd.CanShowAd())
             {
                 rewardedAd.Show((Reward reward) => {

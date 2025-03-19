@@ -34,7 +34,7 @@ namespace CubeHopper.Game
             _addMoneyText.gameObject.SetActive(true);
             _addMoneyText.text = "+" + amount.ToString();
             stats.Money += amount;
-            _addMoneyText.transform.LeanMoveLocalY(_moneyText.transform.localPosition.y, 1f).setIgnoreTimeScale(true).setEaseOutQuart().setOnComplete(() => {
+            _addMoneyText.transform.LeanMoveLocalY(_moneyText.transform.localPosition.y-1, 1f).setIgnoreTimeScale(true).setEaseOutQuart().setOnComplete(() => {
                 _addMoneyText.gameObject.SetActive(false);
                 _addMoneyText.transform.localPosition = _addMoneyStartPos;
                 _moneyText.text = stats.Money.ToString();

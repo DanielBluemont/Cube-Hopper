@@ -70,6 +70,7 @@ namespace CubeHopper.Game
         {
             p.gameObject.SetActive(true);
             p.SetPlatformState(true);
+            p.SetCollider(true);
         }
         private void ActionOnRelease(SimplePlatform p)
         {
