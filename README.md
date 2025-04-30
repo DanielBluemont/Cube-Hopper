@@ -1,5 +1,5 @@
 # Cube-Hopper
- Unity 2D Mobile Game
+*Unity 2D Mobile Game
 ![image](https://github.com/user-attachments/assets/d00d5a0f-c993-4d3e-ac78-bbe1541d75ab)
 ![image](https://github.com/user-attachments/assets/8db10f55-963c-4fb8-9f7f-5192573a406f)
 
