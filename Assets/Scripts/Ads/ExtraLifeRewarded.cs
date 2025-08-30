@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Env;
+using UnityEngine.UI;
 
 namespace CubeHopper
 {
@@ -14,11 +15,11 @@ namespace CubeHopper
         #else
         private string _adUnitId = "unused";
         #endif
-        [SerializeField] private CanvasGroup _prompt;
         private RewardedAd rewardedAd;
         public static Action OnAdStarted;
         public static Action OnRewardGiven;
 
+       
         public void LoadRewardedAd()
         {
             if (rewardedAd != null)
@@ -79,11 +80,6 @@ namespace CubeHopper
             };
             ad.OnAdFullScreenContentFailed += (AdError error) =>
             {
-                _prompt.gameObject.SetActive(true);
-                LeanTween.value(_prompt.gameObject, (x) => { _prompt.alpha = x; }, 0, 1, 0.6f).setEaseOutQuad();
-                LeanTween.value(_prompt.gameObject, (x) => { _prompt.alpha = x; }, 1, 0, 0.6f).setEaseOutQuad().setDelay(1.2f).setOnComplete(() => {
-                    _prompt.gameObject.SetActive(false);
-                });
                 Debug.LogError("Rewarded ad failed to open full screen content " +
                                "with error : " + error);
                 LoadRewardedAd();

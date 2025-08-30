@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 0c85583a36b345049dde717aa0c54fa8
+guid: 6a10354a36d74b90b85bd32e10a7c382
 labels:
 - gvh
-- gvh_version-9.2.0
+- gvh_version-10.4.2
 - gvhp_exportpath-Plugins/Android/googlemobileads-unity.aar
 timeCreated: 1480838400
 PluginImporter:

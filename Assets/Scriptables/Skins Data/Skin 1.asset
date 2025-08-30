@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Skin 1
   m_EditorClassIdentifier: 
   <Price>k__BackingField: 30
-  <IdleSprite>k__BackingField: {fileID: 1352572303, guid: 776ea075f0055d9439d575ebaf136a0c, type: 3}
-  <FlySprite>k__BackingField: {fileID: -2130134913, guid: 776ea075f0055d9439d575ebaf136a0c, type: 3}
+  <IdleSprite>k__BackingField: {fileID: 604368088, guid: 9147c75542a56bb47b74e1c3130301f4, type: 3}
+  <FlySprite>k__BackingField: {fileID: -741266949, guid: 9147c75542a56bb47b74e1c3130301f4, type: 3}
   <TraceColor>k__BackingField:
     serializedVersion: 2
     key0: {r: 0.13955137, g: 0.3795492, b: 0.7924528, a: 1}

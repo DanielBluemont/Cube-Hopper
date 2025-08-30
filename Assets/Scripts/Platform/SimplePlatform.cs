@@ -21,7 +21,7 @@ namespace CubeHopper.Platform
         public void SetPlatformState(bool isActive)
         {
             this.enabled = isActive;
-            //_collider.enabled = isActive;
+            _collider.enabled = isActive;
             if (!isActive && isFading)
             {
                 GetComponentInChildren<SpriteRenderer>().color = Color.white;

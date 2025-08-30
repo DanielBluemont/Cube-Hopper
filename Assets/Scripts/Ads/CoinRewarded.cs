@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace CubeHopper
 {
@@ -16,11 +17,10 @@ namespace CubeHopper
         private string _adUnitId = "unused";
         #endif
 
-        [SerializeField] private CanvasGroup _prompt;
         private RewardedAd rewardedAd;
 
         public static Action<int> OnMoneyRewardGiven;
-        
+      
         public void LoadRewardedAd()
         {
             if (rewardedAd != null)
@@ -43,14 +43,13 @@ namespace CubeHopper
                 Debug.Log("Rewarded ad loaded with response : " + ad.GetResponseInfo());
 
                 rewardedAd = ad;
-               
+                RegisterEventHandlers(rewardedAd);
             });
         }
 
         
         public void ShowRewardedAd()
         {
-            LoadRewardedAd();
             if (rewardedAd != null && rewardedAd.CanShowAd())
             {
                 rewardedAd.Show((Reward reward) => {
@@ -86,12 +85,6 @@ namespace CubeHopper
             };
             ad.OnAdFullScreenContentFailed += (AdError error) =>
             {
-
-                _prompt.gameObject.SetActive(true);
-                LeanTween.value(_prompt.gameObject, (x) => { _prompt.alpha = x; }, 0, 1, 0.6f).setEaseOutQuad();
-                LeanTween.value(_prompt.gameObject, (x) => { _prompt.alpha = x; }, 1, 0, 0.6f).setEaseOutQuad().setDelay(1.2f).setOnComplete(() => {
-                    _prompt.gameObject.SetActive(false);
-                });
                 Debug.LogError("Rewarded ad failed to open full screen content " +
                                "with error : " + error);
                 LoadRewardedAd();

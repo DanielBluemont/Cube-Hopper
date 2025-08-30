@@ -6,10 +6,7 @@ using System.Collections.Generic;
 using CubeHopper.UI;
 using CubeHopper.Audio;
 using CubeHopper.Platform;
-using System.Runtime.CompilerServices;
-using UnityEngine.Rendering;
-using System.Security.Cryptography;
-using UnityEditor;
+
 
 namespace CubeHopper.Game
 {
@@ -65,6 +62,7 @@ namespace CubeHopper.Game
 
         private int _steps;
         private bool isOnGround = true;
+        [SerializeField] private bool isOnGround = true;
 
         public static Action<Vector2> OnLand;
         public static Action OnRelease;
@@ -105,11 +103,10 @@ namespace CubeHopper.Game
                 _dots[i].SetActive(false);
             }
         }
-        bool isDragging = false;
+        [SerializeField] bool isDragging = false;
         public Vector2 velocity;
         private void Update()
         {
-
             velocity = _rigidBody.velocity;
             if (UItools.IsOnUI() || Settings.isPaused) return;
 
@@ -120,8 +117,10 @@ namespace CubeHopper.Game
             }
 
             if (Input.GetMouseButtonDown(0) || (Input.GetMouseButton(0) && !isDragging))
+            {
                 DragStart();
-
+            }
+            
             if (!canDrag || !isOnGround)
             {
                 SetDotsActive(false);
@@ -175,6 +174,7 @@ namespace CubeHopper.Game
                     var p = collision.transform.parent.parent.GetComponent<SimplePlatform>();
                     p.DeactivateAtributes();
                     p.SetPlatformState(false);
+
                     isOnGround = true;
                     OnLand?.Invoke(transform.position);
                     _spriteRenderer.sprite = _idle;
@@ -187,14 +187,14 @@ namespace CubeHopper.Game
         }
 
 
-        private void OnTriggerExit2D(Collider2D collision)
+      /*  private void OnTriggerExit2D(Collider2D collision)
         {
             int layer = collision.gameObject.layer;
             if (layer == PLATFORM_LAYER)
             {
                 isOnGround = false;
             }
-        }
+        }*/
 
         public void Resurrect()
         {
@@ -206,7 +206,7 @@ namespace CubeHopper.Game
         private void Die()
         {
             AudioManager.Instance.PlayAudio(_losingSound);
-            Instantiate(_deathParticles, transform.position, Quaternion.identity);
+            //Instantiate(_deathParticles, transform.position, Quaternion.identity);
             _spriteRenderer.sprite = _idle;
             isOnGround = true;
             gameObject.SetActive(false);

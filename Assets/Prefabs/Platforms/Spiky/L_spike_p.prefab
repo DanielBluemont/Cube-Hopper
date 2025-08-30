@@ -50,6 +50,7 @@ MonoBehaviour:
   _yMaxOffset: 0
   _collider: {fileID: 3959084209108496483}
   _spike: {fileID: 4369938113081379699}
+  _coin: {fileID: 0}
 --- !u!1001 &1882762113830419574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112,7 +113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7629580893455055168, guid: 81fb1e37c916e9f4f8b68e0a6dd4ff03, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1169
+      value: 0.136
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -2,6 +2,7 @@ using CubeHopper.Audio;
 using System;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace CubeHopper.UI
@@ -10,6 +11,8 @@ namespace CubeHopper.UI
     {
         [SerializeField] private AudioClip _ClickSound;
         [SerializeField] private GameObject _settingsPanel;
+        [SerializeField] private GameObject _goHomePanel;
+        [SerializeField] private GameObject _exitButton;
         [SerializeField] private Toggle _vibro, _sound, _music;
         public static bool isPaused { get; private set; }
 
@@ -62,6 +65,26 @@ namespace CubeHopper.UI
             AudioManager.Instance.PlayAudio(_ClickSound);
             _settingsPanel.transform.LeanScale(Vector3.zero, 0.2f).setIgnoreTimeScale(true).setEaseOutQuad().setOnComplete(()=> 
             _settingsPanel.SetActive(false));
+        }
+        public void GoHome()
+        {
+            _goHomePanel.SetActive(true);
+            _exitButton.SetActive(false);
+            AudioManager.Instance.PlayAudio(_ClickSound);
+            _goHomePanel.transform.LeanScale(Vector3.one, 0.3f).setEaseOutQuad().setIgnoreTimeScale(true);
+        }
+        public void YesGoHome() 
+        {
+            isPaused = false;
+            AudioManager.Instance.PlayAudio(_ClickSound);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        public void NoGoHome() 
+        {
+            _exitButton.SetActive(true);
+            AudioManager.Instance.PlayAudio(_ClickSound);
+            _goHomePanel.transform.LeanScale(Vector3.zero, 0.2f).setIgnoreTimeScale(true).setEaseOutQuad().setOnComplete(() =>
+            _goHomePanel.SetActive(false));
         }
         public void RateApp()
         {

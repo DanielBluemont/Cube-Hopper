@@ -27,9 +27,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _HorizontalSpeed: 4
+    - _Noise_Granularity: 0.003921569
     - _UVScale: 4
     m_Colors:
     - _BottomColor: {r: 0.38863173, g: 0.83496493, b: 0.9433962, a: 1}

@@ -3,7 +3,6 @@ using UnityEngine;
 using CubeHopper.CameraModule;
 using CubeHopper.Platform;
 using UnityEngine.Pool;
-using UnityEditor;
 
 namespace CubeHopper.Game
 {
@@ -70,7 +69,7 @@ namespace CubeHopper.Game
         {
             p.gameObject.SetActive(true);
             p.SetPlatformState(true);
-            p.SetCollider(true);
+            //p.SetCollider(true);
         }
         private void ActionOnRelease(SimplePlatform p)
         {
@@ -139,6 +138,7 @@ namespace CubeHopper.Game
             _currentPlatform = _previousPlatform;
             _previousPlatform = null;
             _currentPlatform.gameObject.SetActive(true);
+            _currentPlatform.SetPlatformState(false);
             _player.transform.position = new Vector3
             (
                 _currentPlatform.transform.position.x,

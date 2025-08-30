@@ -8,6 +8,7 @@ Shader "Custom Shaders/Gradient"
         _HorizontalSpeed("Horizontal Speed", float) = 1
         _TopColor ("Top Color", color) = (1,1,1,1) 
         _BottomColor ("Bottom Color", color) = (1,1,1,1) 
+        _Noise_Granularity("Noise Granularity", float) = 0.00392156863
         
     }
     SubShader
@@ -42,9 +43,15 @@ Shader "Custom Shaders/Gradient"
             half4 _TopColor;
             float _UVScale;
             float _HorizontalSpeed;
+            float _Noise_Granularity;
 
             inline float hash(float2 p) {
                 return frac(sin(dot(p, float2(127.1, 311.7))) * 43758.5453);
+            }
+
+            half dither(half2 coordinates)
+            {
+                return lerp(-_Noise_Granularity, _Noise_Granularity, hash(coordinates));
             }
 
             inline half2 randomVector(float2 p) {
@@ -73,7 +80,8 @@ Shader "Custom Shaders/Gradient"
                 half aspect = _ScreenParams.x / _ScreenParams.y;
                 half2 scaledUv = IN.uv * half2(_UVScale * aspect, _UVScale);
                 scaledUv.x += _Time * _HorizontalSpeed;
-
+                half ditherValue = dither(IN.uv);
+                IN.color += half4(ditherValue,ditherValue,ditherValue,0);
                 half2 gridId = floor(scaledUv);
                 half2 gridUv = frac(scaledUv);
 
